@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000",allowCredentials = "true")
+@CrossOrigin(origins = "https://iq-frontend-swart.vercel.app",allowCredentials = "true")
 public class QuestionGenerationController {
     @Autowired
     private GeminiService geminiService;

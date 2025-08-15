@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(value = "http://localhost:3000",allowCredentials = "true")
+@CrossOrigin(value = "https://iq-frontend-swart.vercel.app",allowCredentials = "true")
 public class UserController {
     @Autowired
     private UserService userService;

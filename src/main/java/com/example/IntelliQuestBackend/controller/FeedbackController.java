@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(value = "http://localhost:3000",allowCredentials = "true")
+@CrossOrigin(value = "https://iq-frontend-swart.vercel.app",allowCredentials = "true")
 public class FeedbackController {
     @Autowired
     private FeedbackService feedbackService;

@@ -9,7 +9,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(value = "http://localhost:3000",allowCredentials = "true")
+@CrossOrigin(value = "https://iq-frontend-swart.vercel.app",allowCredentials = "true")
 public class UserProfileController {
     @Autowired
     UserProfileService userProfileService;
