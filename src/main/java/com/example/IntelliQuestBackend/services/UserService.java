@@ -57,7 +57,7 @@ public class UserService {
     }
 
     public void sendVerificationEmail(String email){
-        String verifyUrl = "http://localhost:8080/user/verify?email="+email;
+        String verifyUrl = "https://iq-backend-p2fi.onrender.com/user/verify?email="+email;
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setTo(email);
         msg.setSubject("Verify your email");
