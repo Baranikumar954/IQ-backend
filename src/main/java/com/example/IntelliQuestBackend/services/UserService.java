@@ -43,6 +43,7 @@ public class UserService {
         }
         user.setVerified(true);
         UserProfile userProfile = new UserProfile();
+        userProfile.setId(user.getId());
         userProfile.setEmail(email);
         userProfile.setCreatedAt(LocalDateTime.now());
         userProfileRepository.save(userProfile);
