@@ -1,5 +1,6 @@
 package com.example.IntelliQuestBackend.modules;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 public class UserProfile {
 
     @Id
+    @JsonProperty("_id")
     private String id;
 
     private String fullName = "";
